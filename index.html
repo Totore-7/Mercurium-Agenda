@@ -49,12 +49,6 @@
     .login(config.USERNAME, config.PASSWORD)
     .then(() => {
       console.log("connecté à école directe")
-      let token = ed._token;
-      let id = ed.student.id;
-      console.log(id)
-      let prenom = ed.student.prenom;
-      console.log(prenom);
-      // Get the current date
       let currentDate = new Date();
   
       // Get the year, month, and day
