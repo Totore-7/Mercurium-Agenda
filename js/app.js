@@ -1,14 +1,16 @@
 import ED from "https://esm.sh/papillon-ed-core";
+import config from './config.js';
 
 
 let ed = new ED();
-
+console.log("connection à écoledirecte")
 ed.auth
-  .login("axelxel", "@legoev3AX")
+  .login(config.USERNAME, config.PASSWORD)
   .then(() => {
+    console.log("connecté à école directe")
     let token = ed._token;
-    let id = ed.student.idw;
-    console.log(id);
+    let id = ed.student.id;
+    console.log(id)
     let prenom = ed.student.prenom;
     console.log(prenom);
     // Get the current date
@@ -17,7 +19,7 @@ ed.auth
     // Get the year, month, and day
     let year = currentDate.getFullYear();
     let month = (currentDate.getMonth() + 1).toString().padStart(2, '0'); // Pad single-digit months with a leading zero
-    let day = currentDate.getDate().toString().padStart(2, '0'); // Pad single-digit days with a leading zero
+    let day = (currentDate.getDate() + 2 ).toString().padStart(2, '0'); // Pad single-digit days with a leading zero
 
     // Create the formatted date string
     let formattedDate = `${year}-${month}-${day}`;
