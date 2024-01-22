@@ -21,7 +21,6 @@
     ed.auth
     .login(config.USERNAME, config.PASSWORD)
     .then(() => {
-      document.write("connecté à école directe");
       console.log("connecté à école directe")
       let currentDate = new Date();
   
@@ -41,7 +40,26 @@
         let minute = d.getMinutes().toString().padStart(2, '0'); // Pad single-digit months with a leading zero
         return `${hour}:${minute}`
       }
-      
+      ed.timetable.fetchByDay(formattedDate).then((scheduleData) => {
+        // Convert scheduleData object to an array for sorting
+        const sortedData = Object.values(scheduleData).sort((a, b) => {
+          return new Date(a.start_date) - new Date(b.start_date);
+        });
+
+        var table = document.getElementById("schedule")
+        for (var entry of sortedData ) { 
+          let cell = table.insertRow(); 
+          let start_date = dateToTime(entry.start_date)
+          let end_date = dateToTime(entry.end_date)
+          cell.innerHTML = 
+          `
+            <tr>
+              <td>${start_date} <br> ${end_date}
+              <td>${entry.text} <br> ${entry.prof} <br> ${entry.salle}
+              </tr>
+          `
+          cell.style.backgroundColor = entry.color;}
+      });
     });
   </script>
 </body>
