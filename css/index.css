@@ -1,3 +1,114 @@
+.frame {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.frame .overlap-group-wrapper {
+  background-color: #ffffff;
+  width: 1121px;
+  height: 1117px;
+}
+
+.frame .overlap-group {
+  position: relative;
+  width: 939px;
+  height: 992px;
+  top: 71px;
+  left: 76px;
+  background-image: url(./img/image-here.png);
+  background-size: 100% 100%;
+}
+
+.frame .rectangle {
+  position: absolute;
+  width: 570px;
+  height: 707px;
+  top: 145px;
+  left: 164px;
+}
+
+.frame .img {
+  position: absolute;
+  width: 546px;
+  height: 640px;
+  top: 162px;
+  left: 176px;
+}
+
+.frame .se-souvenir-de-moi {
+  position: absolute;
+  width: 120px;
+  height: 10px;
+  top: 563px;
+  left: 279px;
+}
+
+.frame .besoin-daide {
+  position: absolute;
+  width: 93px;
+  height: 10px;
+  top: 563px;
+  left: 557px;
+}
+
+.frame .veuillez-entrer-vos {
+  position: absolute;
+  width: 267px;
+  height: 10px;
+  top: 312px;
+  left: 315px;
+}
+
+.frame .connectez-vous {
+  position: absolute;
+  width: 258px;
+  height: 24px;
+  top: 267px;
+  left: 324px;
+}
+
+.frame .login {
+  position: absolute;
+  width: 471px;
+  height: 162px;
+  top: 575px;
+  left: 213px;
+}
+
+.frame .group {
+  top: 387px;
+  position: absolute;
+  width: 406px;
+  height: 66px;
+  left: 246px;
+}
+
+.frame .group-2 {
+  top: 475px;
+  position: absolute;
+  width: 406px;
+  height: 66px;
+  left: 246px;
+}
+
+.frame .ellipse {
+  position: absolute;
+  width: 13px;
+  height: 13px;
+  top: 562px;
+  left: 252px;
+}
+
+.frame .connection-admin {
+  position: absolute;
+  width: 116px;
+  height: 10px;
+  top: 710px;
+  left: 391px;
+}
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
     margin: 0;
     padding: 0;
