@@ -21,4 +21,4 @@ export default {
   };
 ```
 
-Utiliser l'extention "live server" de vs code pour faire tourner le site
+Utiliser l'extention "live server" de vs code pour faire tourner le site oualler sur ce [lien](https://totore-7.github.io/Mercurium-Agenda/)
